@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Data Analytics Portfolio - Projects</title>
+  <style>
+    /* Styles for the project page */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #333;
+    }
+
+    h1, h3 {
+      color: #fff;
+    }
+
+    a {
+      text-decoration: none;
+      color: #0066cc;
+    }
+
+    /* Header Styles */
+    header {
+      text-align: center;
+      padding: 10px 0;
+      background: url(header-bg.jpg) no-repeat center center;
+      background-size: cover;
+    }
+
+    /* Navigation Styles */
+    .navbar {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background: rgba(0, 0, 0, 0.8);
+      display: flex;
+      justify-content: center;
+      border-radius: 5px;
+    }
+
+    .navbar li {
+      display: inline-block;
+      margin: 10px;
+    }
+
+    .navbar li a {
+      display: block;
+      color: #fff;
+      text-align: center;
+      padding: 12px 16px;
+      text-decoration: none;
+      transition: background-color 0.3s;
+      border-radius: 3px;
+    }
+
+    .navbar li a:hover {
+      background: #0066cc;
+    }
+
+    .navbar li a.active {
+      background: #0066cc;
+      font-weight: bold;
+    }
+
+
+    /* Main Content Styles */
+    main {
+      padding: 20px;
+      background: #f2f2f2;
+      margin: 20px;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    }
+
+    section {
+      margin-bottom: 30px;
+    }
+
+    section h2 {
+      margin-bottom: 10px;
+      border-bottom: 1px solid #ccc;
+      padding-bottom: 10px;
+    }
+
+    /* Footer Styles */
+    footer {
+      text-align: center;
+      padding: 10px;
+      background: #333;
+      color: #fff;
+    }
+
+    /* Additional styles for the projects page */
+    .project-description {
+      margin-bottom: 20px;
+      color: #333;
+    }
+
+    .project-description h3 {
+      color: #0066cc;
+    }
+
+    /* Tabs Styles */
+    .tab-nav {
+      margin-bottom: 20px;
+    }
+
+    .tab-nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+    }
+
+    .tab-nav li {
+      flex: 1;
+    }
+
+    .tab-nav a {
+      display: block;
+      text-align: center;
+      padding: 10px;
+      background-color: #333;
+      color: #fff;
+      transition: background-color 0.3s ease;
+      cursor: pointer;
+    }
+
+    .tab-nav a:hover {
+      background-color: #444;
+    }
+
+    .tab-nav a.active {
+      background-color: #0066cc;
+      color: #fff;
+    }
+
+    .tab-content {
+      display: none;
+    }
+
+    .tab-content.active {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Bhanu Prakash Konda</h1>
+  </header>
+
+  <!-- Projects Navigation -->
+  <ul class="navbar">
+    <li><a href="home.html">Home</a></li>
+    <li><a href="project.html" class="active">Projects</a></li>
+    <li><a href="blog.html">Blog</a></li>
+  </ul>
+
+  <main>
+    <section id="projects">
+      <h2>Projects</h2>
+
+      <!-- Tabs -->
+      <div class="tab-nav">
+        <ul>
+          <li><a href="#project1" class="active">Data Visualization</a></li>
+          <li><a href="#project2">Machine Learning</a></li>
+          <li><a href="#project3">R Project</a></li>
+        </ul>
+      </div>
+
+      <!-- Project Descriptions -->
+      <div id="project1" class="tab-content active">
+        <div class="project-description">
+          <h3>Data Visualization Project: Remittance, Hunger Index, and Crime Rate in African Countries</h3>
+          <p><strong>Overview:</strong> This project aims to showcase the value of data visualization in understanding key socio-economic indicators for African countries. By visualizing data on remittance flows, hunger index scores, and crime rates, businesses and policymakers can gain insights into the impact of these factors on African development and make informed decisions.</p>
+          <p><strong>Narrative of Key Steps:</strong> The project involved several key steps to analyze and visualize the data effectively. Firstly, I collected and cleaned the data from reliable sources, ensuring its accuracy and completeness. Then, I used SQL queries and data aggregation techniques to combine multiple datasets and create a unified dataset for analysis.</p>
+          <p>Next, I performed statistical analyses and applied mathematical models to identify trends, patterns, and correlations within the data. This involved using programming languages such as R and Python to conduct data wrangling, exploratory data analysis, and statistical modeling.</p>
+          <p>To visualize the findings, I employed data visualization libraries such as D3.js and matplotlib to create interactive charts, graphs, and maps. These visualizations allowed for the intuitive exploration and presentation of complex data relationships.</p>
+          <p>Lastly, I documented the project's methodologies, data sources, and visualization techniques to provide a comprehensive overview of the project's workflow and outcomes.</p>
+        </div>
+      </div>
+
+      <div id="project2" class="tab-content">
+        <div class="project-description">
+          <h3>Machine Learning Project: Chronic Kidney Disease Prediction</h3>
+          <p><strong>Overview:</strong> This machine learning project focuses on developing a predictive model for identifying individuals at risk of chronic kidney disease (CKD). The project's value to businesses lies in providing a tool that can assist healthcare providers in early detection, intervention, and personalized treatment strategies.</p>
+          <p><strong>Narrative of Key Steps:</strong> The project encompassed various key steps to build an accurate CKD prediction model. First, I gathered a comprehensive dataset containing clinical and laboratory attributes of patients, such as age, blood pressure, blood tests, and medical history. I utilized SQL queries and data preprocessing techniques to handle missing values and normalize the data.</p>
+          <p>Next, I employed machine learning algorithms such as logistic regression, decision trees, and support vector machines to train and evaluate the prediction model. Feature engineering techniques were applied to select relevant features and reduce dimensionality. Additionally, I used cross-validation to ensure the model's robustness and generalizability.</p>
+          <p>After developing the model, I implemented it using programming languages such as Python and R. The model was integrated into a user-friendly interface that healthcare professionals can utilize to input patient data and obtain real-time risk predictions.</p>
+          <p>The project's narrative highlights my expertise in data preprocessing, feature engineering, machine learning algorithms, and model deployment, demonstrating my ability to leverage critical thinking and programming skills in a real-world healthcare application.</p>
+        </div>
+      </div>
+
+      <div id="project3" class="tab-content">
+        <div class="project-description">
+          <h3>R Project: Avocado Price Prediction</h3>
+          <p><strong>Overview:</strong> The R project focuses on developing a predictive model for forecasting avocado prices. This project's value to businesses lies in enabling stakeholders in the avocado industry, such as farmers, distributors, and retailers, to make informed decisions regarding pricing, supply chain management, and market trends.</p>
+          <p><strong>Narrative of Key Steps:</strong> The project involved a series of key steps to accurately predict avocado prices. Firstly, I collected historical data on avocado prices, including factors such as region, year, avocado type, and price fluctuations. I used SQL queries to extract and preprocess the data.</p>
+          <p>Next, I performed exploratory data analysis to identify trends, seasonality, and other patterns in avocado prices. Utilizing statistical techniques, I conducted time series analysis to model and forecast avocado price fluctuations. This involved employing algorithms like ARIMA, SARIMA, or Prophet.</p>
+          <p>To enhance the model's performance, I conducted feature engineering, considering factors such as historical prices, region-specific effects, and market conditions. R's rich ecosystem of packages, including tidyverse and forecast, facilitated efficient data manipulation, visualization, and modeling.</p>
+          <p>Finally, I evaluated the model's accuracy using appropriate metrics such as mean absolute error (MAE) and root mean squared error (RMSE). The project's narrative showcases my proficiency in data preprocessing, statistical modeling, forecasting, and effective communication of findings through visualizations and reports.</p>
+        </div>
+      </div>
+
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2023 Bhanu Prakash Konda. All rights reserved.</p>
+    <div class="social-media-icons">
+      <a href="https://www.linkedin.com/in/kbp753/" target="_blank">
+        <img src="linkedin-icon.png" alt="LinkedIn Profile" width="64" height="64">
+      </a>
+    </div>
+  </footer>
+
+  <script>
+    var tabLinks = document.querySelectorAll('.tab-nav a');
+    tabLinks.forEach(function(tabLink) {
+      tabLink.addEventListener('click', function(event) {
+        event.preventDefault();
+        var targetTab = this.getAttribute('href');
+        smoothScroll(targetTab);
+        showTab(targetTab);
+      });
+    });
+
+    function smoothScroll(target) {
+      var targetElement = document.querySelector(target);
+      window.scrollTo({
+        top: targetElement.offsetTop,
+        behavior: 'smooth'
+      });
+    }
+
+    function showTab(targetTab) {
+      var tabContents = document.querySelectorAll('.tab-content');
+      tabContents.forEach(function(tabContent) {
+        if (tabContent.id === targetTab.substring(1)) {
+          tabContent.classList.add('active');
+        } else {
+          tabContent.classList.remove('active');
+        }
+      });
+
+      var tabLinks = document.querySelectorAll('.tab-nav a');
+      tabLinks.forEach(function(tabLink) {
+        if (tabLink.getAttribute('href') === targetTab) {
+          tabLink.classList.add('active');
+        } else {
+          tabLink.classList.remove('active');
+        }
+      });
+    }
+  </script>
+</body>
+</html>
