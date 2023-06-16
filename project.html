@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Data Analytics Portfolio - Projects</title>
+  <style>
+    /* Styles for the project page */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #333;
+    }
+table {
+    border-collapse: collapse;
+  }
+
+  th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+
+  th {
+    background-color: #f2f2f2;
+  }
+      tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+    h1, h3 {
+      color: #fff;
+    }
+
+    a {
+      text-decoration: none;
+      color: #0066cc;
+    }
+
+    /* Header Styles */
+    header {
+      text-align: center;
+      padding: 10px 0;
+      background: url(header-bg.jpg) no-repeat center center;
+      background-size: cover;
+    }
+
+    /* Navigation Styles */
+    .navbar {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background: rgba(0, 0, 0, 0.8);
+      display: flex;
+      justify-content: center;
+      border-radius: 5px;
+    }
+
+    .navbar li {
+      display: inline-block;
+      margin: 10px;
+    }
+
+    .navbar li a {
+      display: block;
+      color: #fff;
+      text-align: center;
+      padding: 12px 16px;
+      text-decoration: none;
+      transition: background-color 0.3s;
+      border-radius: 3px;
+    }
+
+    .navbar li a:hover {
+      background: #0066cc;
+    }
+
+    .navbar li a.active {
+      background: #0066cc;
+      font-weight: bold;
+    }
+
+
+    /* Main Content Styles */
+    main {
+      padding: 20px;
+      background: #f2f2f2;
+      margin: 20px;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    }
+
+    section {
+      margin-bottom: 30px;
+    }
+
+    section h2 {
+      margin-bottom: 10px;
+      border-bottom: 1px solid #ccc;
+      padding-bottom: 10px;
+    }
+
+    /* Footer Styles */
+    footer {
+      text-align: center;
+      padding: 10px;
+      background: #333;
+      color: #fff;
+    }
+
+    /* Additional styles for the projects page */
+    .project-description {
+      margin-bottom: 20px;
+      color: #333;
+    }
+
+    .project-description h3 {
+      color: #0066cc;
+    }
+
+    /* Tabs Styles */
+    .tab-nav {
+      margin-bottom: 20px;
+    }
+
+    .tab-nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+    }
+
+    .tab-nav li {
+      flex: 1;
+    }
+
+    .tab-nav a {
+      display: block;
+      text-align: center;
+      padding: 10px;
+      background-color: #333;
+      color: #fff;
+      transition: background-color 0.3s ease;
+      cursor: pointer;
+    }
+
+    .tab-nav a:hover {
+      background-color: #444;
+    }
+
+    .tab-nav a.active {
+      background-color: #0066cc;
+      color: #fff;
+    }
+
+    .tab-content {
+      display: none;
+    }
+
+    .tab-content.active {
+      display: block;
+    }
+      
+    .project-images {
+      margin-top: 20px;
+    }
+
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Bhanu Prakash Konda</h1>
+  </header>
+
+  <!-- Projects Navigation -->
+  <ul class="navbar">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="project.html" class="active">Projects</a></li>
+    <li><a href="blog.html">Blog</a></li>
+  </ul>
+
+  <main>
+    <section id="projects">
+      <h2>Projects</h2>
+
+      <!-- Tabs -->
+      <div class="tab-nav">
+        <ul>
+          <li><a href="#project1" class="active">Data Visualization</a></li>
+          <li><a href="#project2">Machine Learning</a></li>
+          <li><a href="#project3">R Project</a></li>
+        </ul>
+      </div>
+
+      <!-- Project Descriptions -->
+      <div id="project1" class="tab-content active">
+        <div class="project-description">
+          <h3>Data Visualization Project: Remittance, Hunger Index, and Crime Rate in African Countries</h3>
+          <p><strong>Overview:</strong> This project aims to showcase the value of data visualization in understanding key socio-economic indicators for African countries. By visualizing data on remittance flows, hunger index scores, and crime rates, businesses and policymakers can gain insights into the impact of these factors on African development and make informed decisions.</p>
+          <p><strong>Narrative of Key Steps:</strong></p>
+          <ol>
+            <li>Collecting and cleaning data from reliable sources, ensuring accuracy and completeness</li>
+            <li>Using SQL queries and data aggregation techniques to combine multiple datasets</li>
+            <li>Performing statistical analyses and applying mathematical models to identify trends, patterns, and correlations</li>
+            <li>Conducting data wrangling, exploratory data analysis, and statistical modeling using programming languages such as R and Python</li>
+            <li>Creating interactive charts, graphs, and maps using data visualization libraries such as D3.js and matplotlib</li>
+            <li>Documenting methodologies, data sources, and visualization techniques</li>
+          </ol>
+          <p>Insights from this project:</p>
+          <div class="project-images">
+            <img src="DV1.png" alt="Remittance Insights 1">
+            <img src="DV2.png" alt="Remittance Insights 2">
+          </div>
+        </div>
+      </div>
+
+<div id="project2" class="tab-content">
+  <div class="project-description">
+    <h3>Machine Learning Project: Chronic Kidney Disease Prediction</h3>
+    <p><strong>Overview:</strong> This project aims to develop a machine learning model to predict chronic kidney disease (CKD) in patients based on a dataset collected over a 2-month period in India. The dataset consists of 25 features, including blood cell counts and other relevant factors, with the target variable being the classification of CKD ('ckd') or non-CKD ('notckd').</p>
+    <p><strong>Narrative of Key Steps:</strong></p>
+    <ol>
+      <li>Exploratory Data Analysis (EDA) to understand the dataset and identify patterns or correlations.</li>
+      <li>Preprocessing the data by handling missing values, scaling numerical features, and encoding categorical variables.</li>
+      <li>Splitting the dataset into a training set (80%) and a test set (20%) for model evaluation.</li>
+      <li>Training various machine learning models:</li>
+    </ol>
+    <table>
+           <tr><strong>Before Hyperparameter tuning</strong></tr>
+      <tr>
+        <th>Model</th>
+        <th>Accuracy</th>
+        <th>Recall</th>
+      </tr>
+      <tr>
+        <td>K-Nearest Neighbors (KNN)</td>
+        <td>0.69</td>
+        <td>0.7878</td>
+      </tr>
+      <tr>
+        <td>Decision Tree</td>
+        <td>0.95</td>
+        <td>0.9393</td>
+      </tr>
+      <tr>
+        <td>Random Forest</td>
+        <td>0.95</td>
+        <td>0.9696</td>
+      </tr>
+      <tr>
+        <td>XGBoost</td>
+        <td>0.9625</td>
+        <td>0.9696</td>
+      </tr>
+      <tr>
+        <td>AdaBoost</td>
+        <td>0.9625</td>
+        <td>0.9696</td>
+      </tr>
+      <tr>
+        <td>Logistic Regression</td>
+        <td>0.90</td>
+        <td>0.97</td>
+      </tr>
+      <tr>
+        <td>Multi-Layer Perceptron (MLP)</td>
+        <td>0.85</td>
+        <td>0.85</td>
+      </tr>
+    </table>
+    <ol start="5">
+      <li>Performing hyperparameter tuning for the models to improve their performance.</li>
+      <li>Evaluating the models based on their recall scores, with a focus on minimizing false negatives and correctly identifying CKD cases.</li>
+    </ol>
+    <table>
+        <tr><strong>After Hyperparameter tuning</strong></tr>
+      <tr>
+        <th>Model</th>
+        <th>Recall</th>
+      </tr>
+      <tr>
+        <td>K-Nearest Neighbors (KNN)</td>
+        <td>0.8803</td>
+      </tr>
+      <tr>
+        <td>Decision Tree</td>
+        <td>0.9572</td>
+      </tr>
+      <tr>
+        <td>Random Forest</td>
+        <td>0.9375</td>
+      </tr>
+      <tr>
+        <td>XGBoost</td>
+        <td>0.9688</td>
+      </tr>
+      <tr>
+        <td>AdaBoost</td>
+        <td>0.9696</td>
+      </tr>
+      <tr>
+        <td>Logistic Regression</td>
+        <td>0.9706</td>
+      </tr>
+      <tr>
+        <td>Multi-Layer Perceptron (MLP)</td>
+        <td>0.8485</td>
+      </tr>
+    </table>
+    <p>Based on the results, the logistic regression model achieved the highest recall score of 0.9706 after hyperparameter tuning. This model shows promise for accurate chronic kidney disease prediction and warrants further evaluation and integration into a healthcare system.</p>
+  </div>
+</div>
+
+
+      <div id="project3" class="tab-content">
+        <div class="project-description">
+          <h3>R Project: Avocado Price Prediction</h3>
+          <p><strong>Overview:</strong> The R project focuses on developing a predictive model for forecasting avocado prices. This project's value to businesses lies in enabling stakeholders in the avocado industry, such as farmers, distributors, and retailers, to make informed decisions regarding pricing, supply chain management, and market trends.</p>
+          <p><strong>Narrative of Key Steps:</strong></p>
+          <ol>
+            <li>Data preprocessing: Loading the avocado data and converting columns to appropriate data types</li>
+            <li>Creating regression models:</li>
+            <ul>
+              <li>Three simple regression models: Investigating the relationship between average price and 'type', 'large.bags', and 'xlarge.bags' independently</li>
+              <li>Three multiple regression models: Exploring combinations of 'type', 'large.bags', and 'xlarge.bags' as independent variables</li>
+              <li>Full main-effects multiple regression model: Including all three independent variables</li>
+              <li>Interaction term multiple regression model: Considering the interaction between 'type' and 'xlarge.bags'</li>
+              <li>Two squared term regression models: Examining non-linear relationships using squared terms</li>
+            </ul>
+            <li>Analysis of regression models:</li>
+            <ul>
+              <li>Assessing the significance and impact of variables based on p-values and R-squared values</li>
+              <li>Identifying the best-fit model with the highest R-squared value</li>
+              <li>Assessing <strong>LINE</strong> assumptions:</li>
+              <ul>
+                <li><strong>L</strong>inearity: Verifying if data points align closely with the regression line</li>
+                <li><strong>I</strong>ndependence: Ensuring the absence of patterns in the residual plot</li>
+                <li><strong>N</strong>ormality: Checking if the residuals approximately follow a normal distribution</li>
+                <li><strong>E</strong>quality of variance: Assessing if the spread of residuals is consistent</li>
+              </ul>
+            </ul>
+            <li>Prediction intervals: Estimating the price range for avocados satisfying specific conditions using the predict() function</li>
+          </ol>
+          <p>This project involves exploring different regression models, analyzing their significance and goodness of fit, and providing price estimation through prediction intervals based on specific conditions.</p>
+            <div class="project-images">
+            <img src="R1.png" alt="Summary">
+          </div>
+        </div>
+      </div>
+        <h4> You can download the projects <a href="https://github.com/kbp753/myprojects">here </a></h4>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2023 Bhanu Prakash Konda. All rights reserved.</p>
+    <div class="social-media-icons">
+      <a href="https://www.linkedin.com/in/kbp753/" target="_blank">
+        <img src="linkedin-icon.png" alt="LinkedIn Profile" width="64" height="64">
+      </a>
+    </div>
+  </footer>
+
+  <script>
+    var tabLinks = document.querySelectorAll('.tab-nav a');
+    tabLinks.forEach(function(tabLink) {
+      tabLink.addEventListener('click', function(event) {
+        event.preventDefault();
+        var targetTab = this.getAttribute('href');
+        smoothScroll(targetTab);
+        showTab(targetTab);
+      });
+    });
+
+    function smoothScroll(target) {
+      var targetElement = document.querySelector(target);
+      window.scrollTo({
+        top: targetElement.offsetTop,
+        behavior: 'smooth'
+      });
+    }
+
+    function showTab(target) {
+      var tabs = document.querySelectorAll('.tab-content');
+      tabs.forEach(function(tab) {
+        tab.classList.remove('active');
+      });
+      document.querySelector(target).classList.add('active');
+      var tabLinks = document.querySelectorAll('.tab-nav a');
+      tabLinks.forEach(function(tabLink) {
+        tabLink.classList.remove('active');
+        if (tabLink.getAttribute('href') === target) {
+          tabLink.classList.add('active');
+        }
+      });
+    }
+  </script>
+</body>
+</html>
